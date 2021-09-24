@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body, #application{
+	height: 100%;
+	overflow: hidden;
+	font-family: "Helvetica";
+}
+
+.diagram-container{
+	background: #333333;
+	width: 100%;
+	height: 100%;
+}
+
+.custom-node{
+	border: solid 2px gray;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+}
+
+.custom-node-color{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+
+.circle-port{
+	width: 12px;
+	height: 12px;
+	margin: 2px;
+	border-radius: 4px;
+	background: darkgray;
+	cursor: pointer;
+}
+
+.circle-port:hover{
+	background: mediumpurple;
+}
+
+
+.container {
+	width: 300px !important;
+	min-height: 300px !important;
+	height: 300px !important;
+	padding: 20px;
+	background:rgba(0,0,0,0.3);
+}
+
+.add-node-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.add-node-form label {
+	color: #fff;
+}
+
+.add-node-form input {
+	width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.add-node-item {
+	flex: 0 0 100%;
+	margin-bottom: 10px;
+}
+
+.addButton {
+	font-size: 18px;
+	cursor: pointer;
+	padding: 10px 20px;
+	width: 100%;
+}
